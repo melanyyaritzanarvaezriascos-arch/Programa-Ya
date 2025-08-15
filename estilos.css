@@ -1,0 +1,224 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	background: rgb(245,245,245);
+}	
+	
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header .contenedor { 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}	
+.logo {
+	color: blueviolet;
+	font-size: 2.5em;
+	font-weight: bold;
+	flex-direction: row;
+}		
+
+.logo, nav{
+	padding: 10px;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	padding:5px 10px;
+}	
+nav a:hover {
+	background: blueviolet;
+	color: white;
+}
+
+#Aprende {
+	background-image: url("imagenes/hero.jpg");
+	background-size: cover;
+	background-position: center center;
+	height: 70vh;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+button {
+	background: rgb(138, 43, 226);
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+button:hover {
+	background: rgb(105, 17, 190);
+}
+
+span {
+	color: blueviolet;
+	font-size: 1.2em;
+}
+
+#programa_ya {
+	text-align: center;
+}
+
+#programa_ya h1{
+	padding:30px;
+}
+
+#programa_ya p{
+	padding-bottom: 30px;
+}
+
+#nuestros_programas {
+	background: linear-gradient(black, blueviolet);
+}
+
+#Aprende h1 {
+	color: white;
+	font-size:2em;
+	margin-bottom:3%;
+}
+
+#nuestros_programas .Programas {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	color: white;
+	padding-bottom: 5%
+}
+
+#nuestros_programas .titulos_violetas {
+	text-align: center;
+	color: blueviolet;
+	padding:5%;
+}
+
+#nuestros_programas  button {
+	margin:15%;
+}
+
+#carta1 {
+	background-image:  linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0)),url("imagenes/cartauno.jpg");
+	background-size:cover;
+	margin: 0 1%;
+	border-radius: 15px;
+}
+
+#carta2 {
+	background-image:linear-gradient(rgb(0,0,0,0.2),rgb(0,0,0)),url("imagenes/cartados.jpg");
+	background-size:cover;
+	background-position: center center;
+	margin: 0 1%;
+	border-radius: 15px;
+}
+
+#carta3 {
+	background-image: linear-gradient(rgb(0,0,0,0.2),rgb(0,0,0)),url("imagenes/cartatres.jpg");
+	background-size:cover;
+	background-position: center center;
+	margin: 0 1%;
+	border-radius: 15px;
+}
+
+#nuestros_programas h1 {
+	margin-bottom: 20px;
+}
+	
+#nuestros_programas p {
+	margin: 0 8px;
+}
+	
+#nuestros_programas span {
+	color:white;
+	text-shadow:
+	0 0 10px white,
+    0 0 20px white,
+	0 0 40px white;
+}	
+
+#Caracteristicas {
+	height:50vh;
+}
+
+#Caracteristicas .contenedor {
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	height:50vh
+}
+	
+#Caracteristicas ul {
+	text-align: center;
+	font-weight: bold;
+	list-style: none;
+}
+
+#Caracteristicas li {
+	margin: 15px;
+}	
+
+#listo {
+	background: linear-gradient(black, blueviolet);
+	background-size: cover;
+	background-position: center center;
+	height: 65vh;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#listo h1 {
+	color: white;
+	font-size: 2em;
+	margin-bottom: 3%;
+	font-size: 2.5em;
+}
+
+footer .contenedor {
+	justify-content: center;
+	display: flex;
+	height: 100px;
+	align-items: end;
+}
+
+footer p {
+	color: rgb(137,137,137);
+}
+
+@media (max-width: 720px) {
+	header .contenedor {
+		flex-direction: column;
+		
+	}
+	header nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+}
+
+#nuestros_programas .Programas {
+	flex-direction:column;
+}
+
+#carta1, #carta2, #carta3{
+	margin: 30px;
+}
